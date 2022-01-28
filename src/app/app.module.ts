@@ -8,6 +8,7 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { FormsModule } from '@angular/forms';
 import { Exercise2Component } from './exercise2/exercise2.component';
+import { Exercise3Component } from './exercise3/exercise3.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { Exercise2Component } from './exercise2/exercise2.component';
     SuccessAlertComponent,
     WarningAlertComponent,
     Exercise2Component,
+    Exercise3Component,
    
   ],
   imports: [
