@@ -34,11 +34,12 @@ export class ServersComponent implements OnInit {
     this.serverCreationStatus = 'Server was created! Name is' + this.serverName;
 
   }
-
+  
   onUpdateServerName(event: any) {
-    //cmando utilizzato per registrare l'evento nella console
+    //comando utilizzato per registrare l'evento nella console
     // console.log(event);
-    //informiamo typeScript che il valore sarà un lemento di tipo Html con un cast esplicito
+
+    //informiamo typeScript che il valore sarà un l'emento di tipo Html con un cast esplicito
     //altrimenti basta event.target.value
     this.serverName = (<HTMLInputElement>event.target).value;
   }
