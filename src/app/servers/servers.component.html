@@ -6,15 +6,18 @@
        (input)="onUpdateServerName($event)">
 
     -->
+
 <!--Binding Bidirezionale utilizzando direttiva ngModel-->
 <input type="text"
        class="form-control"
        [(ngModel)]="serverName">
+
 <!--NgModel si attiverà all'evento di input e aggiorna il valore del nome, aggiornando anche il valore dell'elemento di input-->
 <!--ci serve per aggiornare il nome del server dinamicamente in base al nome che viene inserito-->
 <!--<p>{{serverName}}</p>-->
 <!-->tag html per utilizzare il componente<!-->
-<!--[disabled] posso assegnare il valore o un controllo sul bottono-->
+
+<!--[disabled] posso assegnare il valore o un controllo sul bottone-->
 <!--(click) gestisce l'evento di click in questo caso con un metodo-->
 <button class="btn btn-primary" [disabled]="!allowNewServer"
         (click)="onCreateServer()">
