@@ -1,10 +1,11 @@
 
 
 <!--Codice che gestisce la struttura della scritta-->
-<!--[ngStyle] le parentesi al nome indicano che vogliamo associare alcune propietà a questa direttiva NON FUNZIONA-->
+<!--[ngStyle] le parentesi al nome indicano che vogliamo associare alcune propietà a questa direttiva-->
 <!--ngStyle ci permette di modificare lo style-->
-<!--ng-class ci permette di aggiungere o rimuovere dinamicamente le classi CSS se una condizione è rispettata-->
-<p ng-style = "{backgroundColor: getColor()}" ng-class="{online: serverStatus === 'online'}" >
+<!--ng-class ci permette di aggiungere o rimuovere dinamicamente le classi CSS se una condizione è rispettata
+    le chiavi sono le i nomi delle classsi CSS-->
+<p [ngStyle] = "{'backgroundColor': getColor()}" [ngClass]="{online: serverStatus === 'online'}">
   {{'Server'}} with ID {{serverId }} is {{ getServerStatus() }}  </p>
 
 
