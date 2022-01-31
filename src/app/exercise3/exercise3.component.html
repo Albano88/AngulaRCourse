@@ -1,4 +1,4 @@
-
+ 
 
 <h4>exercise3 works!</h4>
 
@@ -18,8 +18,13 @@
   Display Details
 </button>-->
 
-<button class="btn btn-primary" (click)=onToggleDitails()>
+<button class="btn btn-primary" (click)= "onToggleDitails()">
   Display Details
 </button>
+
 <p *ngIf="showSecret">Secret Password=Tuna</p>
-<!--<div ng ="let logItem of log"> {{logItem}}</div>-->
+<div
+     *ngFor ="let logItem of log"
+     [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'trasparent'}"
+     [ngClass]="{'white-text': logItem >=5}"
+     > {{logItem}}</div>

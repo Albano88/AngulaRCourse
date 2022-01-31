@@ -8,7 +8,7 @@ import { Component} from '@angular/core';
 export class Exercise3Component  {
   showSecret = false;
   log = [];
-  constructor() { }
+  
 
   onToggleDitails() {
     this.showSecret = !this.showSecret;
@@ -16,9 +16,7 @@ export class Exercise3Component  {
 
   }
 
-  ToggleMessage() {
-
-  }
+  
   
 
 
