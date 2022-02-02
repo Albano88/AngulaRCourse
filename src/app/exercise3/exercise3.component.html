@@ -22,9 +22,10 @@
   Display Details
 </button>
 
+<!--inserimento index come contatore-->
 <p *ngIf="showSecret">Secret Password=Tuna</p>
 <div
-     *ngFor ="let logItem of log"
-     [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'trasparent'}"
-     [ngClass]="{'white-text': logItem >=5}"
+     *ngFor ="let logItem of log; let i=index"
+     [ngStyle]="{backgroundColor: i>= 4 ? 'blue' : 'trasparent'}"
+     [ngClass]="{'white-text': i>=4}"
      > {{logItem}}</div>

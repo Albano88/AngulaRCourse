@@ -12,7 +12,10 @@ export class Exercise3Component  {
 
   onToggleDitails() {
     this.showSecret = !this.showSecret;
-    this.log.push(this.log.length + 1);
+    //contatore incrementale
+   // this.log.push(this.log.length + 1);
+    //utilizziamo tipmeStrap
+    this.log.push(new Date());
 
   }
 
